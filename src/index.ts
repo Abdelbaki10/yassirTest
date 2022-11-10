@@ -3,7 +3,7 @@ import express from 'express';
 import {getOrmconfigConnection} from './serverConfig/configConnection';
 import routes from './routes';
 import cron from 'node-cron';
-import WeatherService from "./services/weatherService";
+import WeatherService from "./components/weather/weather.service";
 import { middlewares } from "./serverConfig/middleware";
 
 

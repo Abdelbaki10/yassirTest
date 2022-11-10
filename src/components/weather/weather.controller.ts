@@ -1,6 +1,6 @@
 import {Router} from 'express'
-import WeatherService from '../services/weatherService';
-import { GET_PARIS_MAX_AIR_QUALITY_POLLUTION, GET_ZONE_AIR_QUALITY } from './config/routesNames';
+import WeatherService from './weather.service';
+import { GET_PARIS_MAX_AIR_QUALITY_POLLUTION, GET_ZONE_AIR_QUALITY } from '../../routes/static/routesNames';
 
 
 const routes = Router();

@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { MAKE_API_CALL } from "../utils/helper";
-import { API_KEY } from "../routes/config/apikey";
-import { getZoneAirQualityResponse } from "./types/weatherInfoTypes";
-import { ParisAirQ } from "../entities/parisAirQ.entity";
+import { MAKE_API_CALL } from "../../utils/helper";
+import { API_KEY } from "../../routes/static/apikey";
+import { getZoneAirQualityResponse } from "./weather.types";
+import { ParisAirQ } from "../../entities/parisAirQ.entity";
 
 class WeatherService {
     static async getZoneAirQuality(req:Request,res:Response){

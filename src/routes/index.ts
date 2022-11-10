@@ -1,8 +1,8 @@
 import {Router} from 'express';
-import { WEATHER } from './config/routesNames';
-import weatherRoute from './weatherRoute';
+import { WEATHER } from './static/routesNames';
+import weatherController from '../components/weather/weather.controller';
 
 const routes = Router();
-routes.use(`${WEATHER}`,weatherRoute);
+routes.use(`${WEATHER}`,weatherController);
 
 export default routes; 
