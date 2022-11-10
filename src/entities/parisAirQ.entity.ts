@@ -1,29 +1,12 @@
-// import {
-//     Entity,
-//     PrimaryGeneratedColumn,
-//     Column,
-//     CreateDateColumn,
-//     UpdateDateColumn,
-//   } from "typeorm";
+import {
+    Entity,
+    CreateDateColumn,
+  } from "typeorm";
+import { Pollution } from "./pollution";
   
-//   @Entity()
-//   export class ParisAirQ {
-//     @PrimaryGeneratedColumn()
-//     id: number;
-
-//     @Column({ type: "varchar"})
-//     ts:string;
-
-//     @Column({ type: "float" })
-//     aqius:number;
-
-//     @Column({ type: "varchar"})
-//     mainus:string;
-
-//     @Column({ type: "float" })
-//     aqinc:number;
-
-//     @Column({ type: "varchar"})
-//     maincn:string;
-//   }
+  @Entity()
+  export class ParisAirQ extends Pollution{
+    @CreateDateColumn()
+    createDate:Date;
+  }
   
