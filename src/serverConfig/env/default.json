@@ -1,0 +1,23 @@
+
+{
+    "PORT_SERVER": 5000,
+    "ormconfig":{
+        "type": "postgres",
+        "host": "localhost",
+        "username": "postgres",
+        "password": "postgres",
+        "database": "yassirTestW",
+        "port": 5433,
+        "synchronize": true,
+        "logging": true,
+        "entities": ["src/entities/*.entity.ts"]
+        
+      }
+    
+      
+}
+      
+
+    
+
+  
