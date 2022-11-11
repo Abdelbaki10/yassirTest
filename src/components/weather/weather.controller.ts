@@ -5,7 +5,7 @@ import { GET_PARIS_MAX_AIR_QUALITY_POLLUTION, GET_SAVE_PARIS_AIR_QUALITY, GET_ZO
 
 const routes = Router();
 // get airquality based on latitude $ longitude
-routes.get(`${GET_ZONE_AIR_QUALITY}`,WeatherService.getZoneAirQuality)
+routes.get(`${GET_ZONE_AIR_QUALITY}`,WeatherService.getZoneAirQualityParmsChecker,WeatherService.getZoneAirQuality)
 // route for cron job 
 routes.get(`${GET_SAVE_PARIS_AIR_QUALITY}`,WeatherService.getAndSaveParisAirQuality)
 // gets the datetime where paris is mostly polluted  

@@ -25,7 +25,7 @@ getOrmconfigConnection(process.env.NODE_ENV).then(({appDataSource,SERVERPORT})=>
     })
 
     //saving air quality information for PARIS every 1 minute
-    // cron.schedule('* * * * *',parisCronJob)
+    cron.schedule('* * * * *',parisCronJob)
   })
 })
 
